@@ -51,38 +51,67 @@
                     <h2>Portfolio</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="one">
+                          <div class="col-md-6">
+                              <div class="portfolio-item">
+                                  <a href="http://amongthethirsty.com" target="_blank">
+                                      <img class="img-portfolio img-responsive" src="imgs/portfolio/att.png">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="portfolio-item">
+                                  <a href="http://mutualfun.io" target="_blank">
+                                      <img class="img-portfolio img-responsive" src="imgs/portfolio/mutualfun.jpg">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="portfolio-item">
+                                  <a href="http://rubynewbies.org" target="_blank">
+                                      <img class="img-portfolio img-responsive" src="imgs/portfolio/ruby.png">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="portfolio-item">
+                                  <a href="http://chuych.herokuapp.com" target="_blank">
+                                      <img class="img-portfolio img-responsive" src="imgs/portfolio/chuych.jpg">
+                                  </a>
+                              </div>
+                          </div>
+                        </div>  
+
+                        <div class="two hide">
+                          <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="http://amongthethirsty.com" target="_blank">
-                                    <img class="img-portfolio img-responsive" src="imgs/portfolio/att.png">
+                                <a href="https://izea.com" target="_blank">
+                                    <img class="img-portfolio img-responsive" src="imgs/portfolio/izea.png">
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="http://mutualfun.io" target="_blank">
-                                    <img class="img-portfolio img-responsive" src="imgs/portfolio/mutualfun.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="http://rubynewbies.org" target="_blank">
-                                    <img class="img-portfolio img-responsive" src="imgs/portfolio/ruby.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="http://chuych.herokuapp.com" target="_blank">
-                                    <img class="img-portfolio img-responsive" src="imgs/portfolio/chuych.jpg">
-                                </a>
-                            </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="portfolio-item">
+                                  <a href="http://steamrolers.com" target="_blank">
+                                      <img class="img-portfolio img-responsive" src="imgs/portfolio/steamrolers.png">
+                                  </a>
+                              </div>
+                          </div>
                         </div>
                     </div>
+                     <!-- pagination -->
+                    <ul class="pager">
+                      <li>
+                        <a href="#portfolio" id="one">Previous</a>
+                      </li>
+                      <li>
+                        <a href="#portfolio" id="two">Next</a>
+                      </li>
+                    </ul>
                     <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
+               
             </div>
             <!-- /.row -->
         </div>
@@ -164,6 +193,18 @@
             }
         });
     });
+    </script>
+
+    <script>
+        $("#one").click(function(){
+          $(".two").addClass("hide");
+          $(".one").removeClass("hide");
+        });
+
+        $("#two").click(function(){
+          $(".two").removeClass("hide");
+          $(".one").addClass("hide");
+        });
     </script>
 
 </body>
